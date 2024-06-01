@@ -1,0 +1,20 @@
+---
+import '/framework/Styles.scss';
+interface Props {
+	logoSrc: string;
+	textSrc: string;
+}
+
+const { logoSrc, textSrc } = Astro.props;
+---
+
+<div class="button-video-with-image">
+    <a class="flex-itens-center" href="/">
+       <div class="video-div">
+          <video width="36" height="36" src={logoSrc} muted="" preload="auto" class=""></video>
+       </div>
+       <div class="text-image-div relative">
+         <img alt="logo-words" loading="eager" decoding="async" data-nimg="fill" class="text-image" src={textSrc}>
+      </div>
+    </a>
+ </div>

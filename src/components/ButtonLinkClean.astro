@@ -1,0 +1,11 @@
+---
+import '/framework/Styles.scss';
+interface Props {
+	text: string;
+	link: string;
+}
+
+const { text, link } = Astro.props;
+---
+
+<a class='button-link-clean' href={link}>{text}</a>
