@@ -3,3 +3,87 @@
 @import 'components/Common.scss';
 @import 'components/Tab.scss';
 @import 'components/BigTitle.scss';
+@import 'components/StrongButtonIconAndDescription.scss';
+@import 'components/Input.scss';
+@import 'components/BigSectionWithImage.scss';
+
+
+$primary-bg-color: #58B2F5;
+$text-primary-color: #333; // Exemplo de cor para o texto principal
+
+// Classe para o container principal
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 40px;
+  background-color: $primary-bg-color;
+  height: 100%;
+}
+
+// Sub-container dentro do container principal
+.sub-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  position: relative;
+  z-index: 50;
+  width: fit-content;
+  max-width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: 768px) { // md breakpoint
+    justify-content: center;
+    text-align: center;
+    max-width: unset;
+  }
+}
+
+// Estilos para o título
+.title {
+  max-width: 680px;
+  font-weight: medium;
+  color: $text-primary-color;
+
+  @media (min-width: 768px) { // md breakpoint
+    font-size: 6rem;
+  }
+}
+
+// Estilos para o texto
+.text {
+  width: 100%;
+  max-width: 680px;
+  line-height: 150%;
+  font-size: 1rem; // Base para md:text-lg
+}
+
+// Estilos para o vídeo
+.video-container {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #E0E2F2;
+    z-index: 10;
+    pointer-events: none;
+  }
+
+  video {
+    width: 2000px;
+    object-fit: contain;
+    z-index: 20;
+  }
+}

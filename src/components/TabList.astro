@@ -9,8 +9,18 @@ const { tabs } = Astro.props;
 ---
 
 
-<div class="gt-standard-mono">
+<div class="gt-standard-mono bg-white">
   {tabs.map((tab, index) => (
     <Tab key={index} {...tab} /> // Passa todas as propriedades para o componente Tab
   ))}
 </div>
+
+<script type="module">
+    const tabs = document.querySelectorAll('.button');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('selected'));
+        tab.classList.add('selected');
+      });
+    });
+  </script>

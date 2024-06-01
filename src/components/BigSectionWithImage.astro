@@ -1,0 +1,30 @@
+---
+import '/framework/Styles.scss';
+interface Props {
+	title: string;
+	text: string;
+    image: string;
+    color: string;
+}
+
+const { title, text, image, color } = Astro.props;
+---
+
+<section class="big-section" style={`background-color: ${color};`}>
+    <div class="header">
+       <div style="max-width:680px">
+          <h2 class="title">
+             <span data-br=":Ralmjb6ja:" data-brr="1" style="display:inline-block;vertical-align:top;text-decoration:inherit;text-wrap:balance">{title}</span><script>self.__wrap_n=self.__wrap_n||(self.CSS&&CSS.supports("text-wrap","balance")?1:2);self.__wrap_b=(e,n,t)=>{t=t||document.querySelector(`[data-br="${e}"]`);let r=t.parentElement,o=f=>t.style.maxWidth=f+"px";t.style.maxWidth="";let c=r.clientWidth,a=r.clientHeight,s=c/2-.25,i=c+.5,p;if(c){for(o(s),s=Math.max(t.scrollWidth,s);s+1<i;)p=Math.round((s+i)/2),o(p),r.clientHeight===a?i=p:s=p;o(i*n+c*(1-n))}t.__wrap_o||(typeof ResizeObserver!="undefined"?(t.__wrap_o=new ResizeObserver(()=>{self.__wrap_b(0,+t.dataset.brr,t)})).observe(r): false&&0)};self.__wrap_n!=1&&self.__wrap_b(":Ralmjb6ja:",1)</script>
+          </h2>
+       </div>
+       <div class="text-balance w-full" style="max-width:680px">
+          <div class="text">{text}</div>
+       </div>
+    </div>
+    <div class="bg-noise" style="background-image:url(https://cursor.sh/assets/images/noise.jpeg);background-size:30%"></div>
+    <div class="div-bg">
+       
+       <video src={image} width="2000" autoplay="" muted="" preload="auto" loop="" playsinline="" class="z-20 object-contain"></video>
+    </div>
+ </section>
+

@@ -1,0 +1,22 @@
+---
+// src/components/StrongButtonIconAndDescription.astro
+import type { JSX } from 'astro/jsx-runtime';
+import '/framework/Styles.scss';
+
+interface Props {
+  title: string;
+  description: string;
+  svg_icon?: JSX.Element;
+}
+
+const { title, description, svg_icon } = Astro.props;
+
+---
+
+<button class="strong-button main-strong-button parent">
+  <slot name="icon" />
+  <div class="texts">
+    <span class="t1">{title}</span>
+    <span class="t2">{description}</span>
+  </div>
+</button>
