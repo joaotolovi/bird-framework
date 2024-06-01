@@ -1,0 +1,13 @@
+---
+// Tab.astro
+import '/framework/Styles.scss';
+interface Props {
+  text: string;
+  id: string;
+  onClick: () => void; // Adiciona uma função de manipulação de clique
+}
+
+const { text, id, onClick } = Astro.props;
+---
+
+<button class={`button ${id}`} onclick={onClick}>{text}</button>

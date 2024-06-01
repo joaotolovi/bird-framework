@@ -1,0 +1,31 @@
+// Tab.scss
+$bg-white: #ffffff;
+$button-background: #007bff;
+$button-background-active: #3864f6; // Cor para o botão ativo
+$text-black: #252525;
+$save-text-color: #b4b4b8;
+
+.gt-standard-mono {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $bg-white;
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+.button {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem; 
+  padding-left: 1rem;
+  padding-right: 1rem; 
+  border-radius: 0.25rem; 
+  color: #111111; 
+  background: $bg-white;
+
+  &.selected {
+    background-color: $button-background-active;
+    color: $bg-white;
+  }
+
+}

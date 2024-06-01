@@ -1,0 +1,16 @@
+---
+// src/components/TabList.astro
+import Tab from './Tab.astro';
+
+interface Props {
+  tabs: Array<{ text: string; id: string }>; // Define as propriedades esperadas para cada aba
+}
+const { tabs } = Astro.props;
+---
+
+
+<div class="gt-standard-mono">
+  {tabs.map((tab, index) => (
+    <Tab key={index} {...tab} /> // Passa todas as propriedades para o componente Tab
+  ))}
+</div>
