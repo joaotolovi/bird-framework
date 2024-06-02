@@ -1,0 +1,16 @@
+.text-group {
+    display: grid;
+    padding: 1.25rem; 
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem; 
+    grid-template-columns: repeat(1, minmax(0, 1fr)); 
+    gap: 2.5rem; 
+    border-radius: 0.375rem; 
+    background: #F5F5F5;
+
+
+    @media (min-width: 768px) { 
+    padding: 2.5rem; 
+    grid-template-columns: repeat(3, minmax(0, 1fr)); 
+    }
+}

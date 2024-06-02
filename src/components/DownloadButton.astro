@@ -1,0 +1,11 @@
+---
+
+import 'framework/Styles.scss';
+
+interface Props {
+    text: string
+}
+
+const { text } = Astro.props
+---
+<button class="button-download">{text}</button>

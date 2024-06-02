@@ -1,0 +1,15 @@
+.body-text {
+    font-size: 1.25rem;
+    line-height: 1.75rem; 
+    text-align: center; 
+    color: #ffffff; 
+
+    @media (min-width: 640px) { 
+    max-width: 70%;
+    }
+    @media (min-width: 768px) { 
+    font-size: 2.25rem;
+    line-height: 2.5rem; 
+    }
+
+}
