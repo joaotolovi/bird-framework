@@ -11,10 +11,12 @@ import PlaySvg from '../components/PlaySvg.astro';
 import PlaySvgWrapper from '../components/PlaySvgWrapper.astro';
 import Input from '../components/Input.astro';
 import BigSectionWithImage from '../components/BigSectionWithImage.astro';
-import ButtonPrimay from '../components/ButtonPrimay.astro';
+import ButtonPrimary from '../components/ButtonPrimary.astro';
 import DownloadButton from '../components/DownloadButton.astro';
 import TextBody from '../components/TextBody.astro';
 import FeelsFamiliar from '../components/FeelsFamiliar.astro';
+import DownloadPrimary from '../components/DownloadPrimay.astro';
+import DownloadPrimay from '../components/DownloadPrimay.astro';
 
 const tabs = [
   { text: 'Tab 1' },
@@ -33,12 +35,14 @@ const tabs = [
     <BigTitle text="Texto Test" />
     <TabList tabs={tabs} />
     <StrongButtonIconAndDescription  title="test" description="adaew">
-    <ButtonPrimay text="Settings" /> 
-    <DownloadButton text="Download"/>  
-    <TextBody text="Built to make you extraordinarily productive, Cursor is the best way to code with AI."/>
-    <FeelsFamiliar text='Import all your extensions, themes, and keybindings in one click'/>
 		<svg slot="icon" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="w-[38px] h-[38px]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke-miterlimit="10" stroke-width="32" d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z"></path><path d="M216.32 334.44l114.45-69.14a10.89 10.89 0 000-18.6l-114.45-69.14a10.78 10.78 0 00-16.32 9.31v138.26a10.78 10.78 0 0016.32 9.31z"></path></svg>
 	</StrongButtonIconAndDescription>
+  <ButtonPrimary text="Settings" /> 
+  <DownloadButton text="Download For Free"/>  
+  <TextBody text="Built to make you extraordinarily productive, Cursor is the best way to code with AI."/>
+  <FeelsFamiliar text='Import all your extensions, themes, and keybindings in one click'/>
+  <DownloadPrimay text="Download"/>
+
 	<Input/>
 	<BigSectionWithImage color='#58B2F5' image='https://cursor.sh/videos/cpp-full-video.mp4' title='Just hit tab' text="Cursor's Copilot++ lets you breeze through changes by predicting your next edit."/>
   </main>
