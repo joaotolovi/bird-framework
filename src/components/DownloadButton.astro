@@ -3,9 +3,16 @@
 import '/framework/Styles.scss';
 
 interface Props {
-    text: string
+    logoSrc: string;
+	textSrc: string;
 }
 
-const { text } = Astro.props
+const { logoSrc } = Astro.props
 ---
-<button class="download">{text}</button>
+<button class="download"> <!-- esse é o download for free -->
+    <div class="video-download">
+        <video width="36" height="36" src={logoSrc} muted="" preload="auto" style="mix-blend-mode:multiply"></video> 
+    </div>
+    
+    </div>Download for Free</div>
+</button>

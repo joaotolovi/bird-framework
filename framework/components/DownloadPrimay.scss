@@ -9,8 +9,12 @@
     font-size: 1rem;
     line-height: 1.5rem; 
     cursor: pointer; 
+    height: 50px;
+    background-color: #2E53CC;
+    font-family: GT Standard Mono, monospace;
+    color: #fff;       
 
 :hover {
-    background: #2E53CC;
+    background: #5c81fa;
  }
 }

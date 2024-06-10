@@ -14,6 +14,7 @@
     cursor: pointer; 
     background: white;
     color: #000000;
+    font-family: GT Standard Mono, monospace;
     
     @media (min-width: 640px) { 
         display: flex; 
@@ -23,5 +24,6 @@
 
     :hover {
      background: #DBDBDB;
-     }
+     } 
+
 }

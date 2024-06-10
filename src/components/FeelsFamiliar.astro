@@ -3,10 +3,17 @@
 import '/framework/Styles.scss';
 
 interface Props {
-    text: string;
+    logoSrc: string;
 }
 
-const { text } = Astro.props
+const { logoSrc } = Astro.props
 ---
 
-<div class="feels">{text}</p></div>
+<div class="feels">
+    <img alt="VS Code icon" loading="lazy" width="200" height="200" 
+    decoding="async" data-nimg="1" class="h-12 w-12 md:h-16 md:w-16 object-contain"
+    style="color:transparent" src={logoSrc}> <!-- imagem do feels familiar que está no centro da página -->
+    <p class="text-body-feels">Feels Familiar</p>
+    <p class="text-base">Import all your extensions, themes, and</p>
+    <p class="text-base">keybindings in one click.</p>
+</div>
