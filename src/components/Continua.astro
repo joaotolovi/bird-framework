@@ -1,3 +1,4 @@
+---
 import '/framework/Styles.scss';
 
 interface ButtonProps {
@@ -5,7 +6,7 @@ interface ButtonProps {
     className: string;
     children: string;
 }
-
+---
 const Button: FunctionalComponent<ButtonProps> = (props) = {
     return (
         <button type={props.type} class={props.className}>

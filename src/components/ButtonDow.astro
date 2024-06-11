@@ -1,9 +1,11 @@
+---
 import '/framework/Styles.scss';
 interface Props {
-    class: string;
+    classe: string;
     children: React.ReactNode;
 }
 
-  const {class, children} = Astro.props;
+  const {classe, children} = Astro.props;
+---
 
-  <button class="button-dow" href={children}>{class}</button>
+<button class="button-dow" href={children}>{classe}</button>
