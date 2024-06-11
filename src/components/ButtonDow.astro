@@ -1,0 +1,9 @@
+import '/framework/Styles.scss';
+interface Props {
+    class: string;
+    children: React.ReactNode;
+}
+
+  const {class, children} = Astro.props;
+
+  <button class="button-dow" href={children}>{class}</button>

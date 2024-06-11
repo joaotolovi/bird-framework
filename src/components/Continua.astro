@@ -1,0 +1,17 @@
+import '/framework/Styles.scss';
+
+interface ButtonProps {
+    type: string;
+    className: string;
+    children: string;
+}
+
+const Button: FunctionalComponent<ButtonProps> = (props) = {
+    return (
+        <button type={props.type} class={props.className}>
+            {props.children}
+        </button>
+    );
+}
+
+<Button type="submit" className="rt-reset rt-BaseButton rt-Button BrandedButton rt-r-size-3">Continue</Button>
