@@ -11,6 +11,10 @@ import PlaySvg from '../components/PlaySvg.astro';
 import PlaySvgWrapper from '../components/PlaySvgWrapper.astro';
 import Input from '../components/Input.astro';
 import BigSectionWithImage from '../components/BigSectionWithImage.astro';
+import MenuServico from '../components/MenuServico.astro';
+import ButtonDow from '../components/ButtonDow.astro';
+import Introducao from '../components/Introducao.astro';
+import Continua from '../components/Continua.astro';
 
 const tabs = [
   { text: 'Tab 1' },
@@ -24,14 +28,31 @@ const tabs = [
 
 <Layout title="Welcome to Astro.">
   <main class="main">
-    <LogoWithName logoSrc="https://cursor.sh/assets/images/logo.mp4" textSrc="https://cursor.sh/assets/images/logo-words.svg" />
-    <ButtonLinkClean text='Get Started' link='/docs' />
+
+    <LogoWithName 
+    logoSrc="https://cursor.sh/assets/images/logo.mp4" 
+    textSrc="https://cursor.sh/assets/images/logo-words.svg" />
+    <ButtonLinkClean
+     text='Get Started' 
+     link='/docs' />
     <BigTitle text="Texto Test" />
     <TabList tabs={tabs} />
     <StrongButtonIconAndDescription  title="test" description="adaew">
 		<svg slot="icon" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="w-[38px] h-[38px]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke-miterlimit="10" stroke-width="32" d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z"></path><path d="M216.32 334.44l114.45-69.14a10.89 10.89 0 000-18.6l-114.45-69.14a10.78 10.78 0 00-16.32 9.31v138.26a10.78 10.78 0 0016.32 9.31z"></path></svg>
-	</StrongButtonIconAndDescription>
-	<Input/>
-	<BigSectionWithImage color='#58B2F5' image='https://cursor.sh/videos/cpp-full-video.mp4' title='Just hit tab' text="Cursor's Copilot++ lets you breeze through changes by predicting your next edit."/>
+	  </StrongButtonIconAndDescription>
+	  <Input/>
+	  <BigSectionWithImage color='#58B2F5' image='https://cursor.sh/videos/cpp-full-video.mp4' title='Just hit tab' text="Cursor's Copilot++ lets you breeze through changes by predicting your next edit."/>
+    <ButtonDow className="button download"></ButtonDow>
+    <MenuServico><a className="flex items-center justify-center text-text-on-fill text-base leading-[110%] gt-standard-mono px-3 py-2 rounded-md hover:bg-[#F5F5F5] hover:text-black"
+      href={href}
+      target={target} 
+      ></a>
+    </MenuServico>  
+    <Introducao> <p class="leading-[140%] text-xl md:text-4xl text-center text-white font-[300] sm:max-w-[70%] mx-auto" style="text-wrap:balance">
+      Built to make you extraordinarily productive, Cursor is the best way to code with AI.
+      </p>
+    </Introducao>
+    <Continua><button type="submit" className="rt-reset rt-BaseButton rt-Button BrandedButton rt-r-size-3">Continue</button></Continua>
+
   </main>
 </Layout>
