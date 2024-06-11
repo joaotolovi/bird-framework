@@ -17,6 +17,11 @@ import DownloadButton from '../components/DownloadButton.astro';
 import FeelsFamiliar from '../components/FeelsFamiliar.astro';
 import DownloadPrimay from '../components/DownloadPrimay.astro';
 import GoogleComp from '../components/GoogleComp.astro';
+import MenuServico from '../components/MenuServico.astro';
+import ButtonDow from '../components/ButtonDow.astro';
+import Introducao from '../components/Introducao.astro';
+import Continua from '../components/Continua.astro';
+
 
 const tabs = [
   { text: 'Tab 1' },
@@ -30,8 +35,13 @@ const tabs = [
 
 <Layout title="Welcome to Astro.">
   <main class="main">
-    <LogoWithName logoSrc="https://cursor.sh/assets/images/logo.mp4" textSrc="https://cursor.sh/assets/images/logo-words.svg" />
-    <ButtonLinkClean text='Get Started' link='/docs' />
+
+    <LogoWithName 
+    logoSrc="https://cursor.sh/assets/images/logo.mp4" 
+    textSrc="https://cursor.sh/assets/images/logo-words.svg" />
+    <ButtonLinkClean
+     text='Get Started' 
+     link='/docs' />
     <BigTitle text="Texto Test" />
     <TabList tabs={tabs} />
     <StrongButtonIconAndDescription  title="test" description="adaew">
@@ -46,5 +56,19 @@ const tabs = [
 
 	<Input/>
 	<BigSectionWithImage color='#58B2F5' image='https://cursor.sh/videos/cpp-full-video.mp4' title='Just hit tab' text="Cursor's Copilot++ lets you breeze through changes by predicting your next edit."/>
+	  </StrongButtonIconAndDescription>
+	  <Input/>
+	  <BigSectionWithImage color='#58B2F5' image='https://cursor.sh/videos/cpp-full-video.mp4' title='Just hit tab' text="Cursor's Copilot++ lets you breeze through changes by predicting your next edit."/>
+    <ButtonDow className="button download"></ButtonDow>
+    <MenuServico><a className="flex items-center justify-center text-text-on-fill text-base leading-[110%] gt-standard-mono px-3 py-2 rounded-md hover:bg-[#F5F5F5] hover:text-black"
+      href={href}
+      target={target} 
+      ></a>
+    </MenuServico>  
+    <Introducao> <p class="leading-[140%] text-xl md:text-4xl text-center text-white font-[300] sm:max-w-[70%] mx-auto" style="text-wrap:balance">
+      Built to make you extraordinarily productive, Cursor is the best way to code with AI.
+      </p>
+    </Introducao>
+    <Continua><button type="submit" className="rt-reset rt-BaseButton rt-Button BrandedButton rt-r-size-3">Continue</button></Continua>
   </main>
 </Layout>
