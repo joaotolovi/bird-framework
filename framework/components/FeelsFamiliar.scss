@@ -1,0 +1,32 @@
+.feels {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;     
+}
+
+.text-body-feels {
+    margin-top: 1rem;
+    margin-bottom: 1rem; 
+    font-size: 1.5rem;
+    line-height: 2rem; 
+    font-weight: 700; 
+    text-align: center; 
+    color: #fff;
+
+    @media (min-width: 768px) { 
+    font-size: 1.875rem;
+    line-height: 2.25rem; 
+    }
+}
+
+.text-base {
+    font-size: 1rem;
+    line-height: 1.5rem; 
+    font-weight: 400; 
+    text-align: center; 
+    color: #fff;
+    font-family: GT Standard Mono, monospace;
+
+
+}

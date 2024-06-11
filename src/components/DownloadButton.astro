@@ -1,0 +1,18 @@
+---
+
+import '/framework/Styles.scss';
+
+interface Props {
+    logoSrc: string;
+	textSrc: string;
+}
+
+const { logoSrc } = Astro.props
+---
+<button class="download"> <!-- esse é o download for free -->
+    <div class="video-download">
+        <video width="36" height="36" src={logoSrc} muted="" preload="auto" style="mix-blend-mode:multiply"></video> 
+    </div>
+    
+    </div>Download for Free</div>
+</button>

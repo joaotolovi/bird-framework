@@ -1,0 +1,13 @@
+---
+
+import '/framework/Styles.scss';
+interface Props {
+    text: string;
+}
+
+const { text } = Astro.props;
+
+---
+
+<!-- botão settings -->
+<a class="flexContainerCenteredSoftEdges">{text}</a>  

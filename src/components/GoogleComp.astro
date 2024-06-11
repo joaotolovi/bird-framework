@@ -1,0 +1,13 @@
+---
+
+import '/framework/Styles.scss';
+
+interface Props {
+    textSrc: string;
+}
+
+const { textSrc } = Astro.props
+---
+
+<button class="button-google">{textSrc}</button> <!-- botão de login com o google -->
+
